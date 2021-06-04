@@ -56,7 +56,7 @@ Run `build.sh` script in the project's root directory.
 
 ## Code description
 
-`graph_classification.ipynb` is the main python notebook file, and specific arguments are set in `args.py`.
+- `graph_classification.ipynb` is the main python notebook file, and specific arguments are set in `args.py`.
 This notebook consist of code for dataset processing and of different models used. Hyperparameters can be set in notebook itself. 
 
 To execute any desired model, run those particular code snippet.
