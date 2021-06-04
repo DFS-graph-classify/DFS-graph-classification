@@ -1,5 +1,4 @@
 from datetime import datetime
-import torch
 from utils import get_model_attribute
 
 
@@ -9,21 +8,19 @@ class Args:
     """
 
     def __init__(self):
-        # Can manually select the device too
-        self.device = torch.device(
-            'cuda:0' if torch.cuda.is_available() else 'cpu')
+       
         # Clean temp folder
         self.clean_temp = False
         
         # Check datasets/process_dataset for datasets
         # Select dataset to train the model
-        self.graph_type = 'PTC_FR'
-        self.default_edge = None #Set it None to take existing edge label
+        self.graph_type = 'MUTAG'
+        self.default_edge = None #Set it None to take existing edge label or set it to the default value
         self.num_graphs = None  # Set it None to take complete dataset
-        self.num_positive = None
-        self.num_negative = None
-        self.num_graphs_positive = None
-        self.num_graphs_negative = None
+        self.num_positive = None # Set it None to take all positive graohs in dataset else the number of positive sample to take
+        self.num_negative = None # Set it None to take all positive graphs in dataset else the number of negative sample to take
+        self.num_graphs_positive = None # Set it None to take all graphs as sequence else the number of positive sequence to take
+        self.num_graphs_negative = None # Set it None to take all graphs as sequence else the number of positive sequence to take
 
         # Whether to produce networkx format graphs for real datasets
         self.produce_graphs = True
@@ -45,8 +42,6 @@ class Args:
         self.fname = self.graph_type
 
         # Calcuated at run time
-        # self.current_model_save_path = self.model_save_path + \
-        #     self.fname + '_' + self.time + '/'
         self.current_dataset_path = None
         self.current_processed_dataset_path = None
         self.current_min_dfscode_path = None
@@ -58,13 +53,7 @@ class Args:
 
     
     def update_args(self):
-        # if self.load_model:
-        #     args = get_model_attribute(
-        #         'saved_args', self.load_model_path, self.load_device)
-        #     args.device = self.load_device
-        #     args.load_model = True
-        #     args.load_model_path = self.load_model_path
-        #     args.epochs = self.epochs_end
+        # if self.load_dataset:
 
         #     args.produce_graphs = False
         #     args.produce_min_dfscodes = False
