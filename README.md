@@ -2,7 +2,7 @@
 
 ## Installation
 
-The code has been tested with Python 3.7.10 in Google Colab (https://colab.research.google.com/notebooks/intro.ipynb?utm_source=scs-index).
+The code has been tested with Python 3.7.10 in [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb?utm_source=scs-index).
 
 ### Google Colab 
 
@@ -10,14 +10,14 @@ Tensorflow and all the required libraries are already installed in Google Colab.
 
 #### To run
 
-Just have to upload the `graph_classification.ipynb` notebook in google colab.
-Unzip the dataset folder you wish to work on.
-You can either upload the complete folder in your google drive(recommended) or can upload for that runtime.
+- Just have to upload the `graph_classification.ipynb` notebook in google colab.
+- Unzip the dataset folder you wish to work on.
+- You can either upload the complete folder in your google drive(recommended) or can upload for that runtime.
 If folder is uploaded in drive, mount the drive and run the code snippets as required. 
 
 ### Local System (Linux)
 
-Recommended to create virtual environment using [anaconda](https://www.anaconda.com/distribution/) distribution for Python and other packages.
+Recommended to create virtual environment using [Anaconda](https://www.anaconda.com/distribution/) distribution for Python and other packages.
 
 Install the other dependencies.
 
@@ -49,22 +49,22 @@ Run `build.sh` script in the project's root directory.
 
 #### To run
 
-Unzip the dataset folder you wish to work on.
-Open terminal and type `jupyter-notebook`.
-Open the `graph_classification.ipynb` notebook file and run the code snippets as required.
+- Unzip the dataset folder you wish to work on.
+- Open terminal and type `jupyter-notebook`.
+- Open the `graph_classification.ipynb` notebook file and run the code snippets as required.
 
 
 ## Code description
 
-`graph_classification.ipynb` is the main python notebook file, and specific arguments are set in `args.py`.s
+`graph_classification.ipynb` is the main python notebook file, and specific arguments are set in `args.py`.
 This notebook consist of code for dataset processing and of different models used. Hyperparameters can be set in notebook itself. 
 
 To execute any desired model, run those particular code snippet.
 
 - `data_processing.py` is main file to process the dataset, i.e., produce graphs, its min dfs code and its sequencial embedding. (This is already present in notebook so no need to execute separately; this for the purpose of only data processing)
 
-All the used datasets are in folder `datasets`
-source: https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets
+All the used datasets are in folder `datasets`.
+Source: https://ls11-www.cs.tu-dortmund.de/staff/morris/graphkerneldatasets
 
 Dataset Processing:
 
@@ -97,13 +97,13 @@ There are several different types of outputs, each saved into a different direct
 - `tmp/` stores all the temporary files generated during training and evaluation.
 - `results/` for contains the results of the model. Different folders are created corresponding to dataset used. 
 
-###dataset processing
+### Dataset processing
 - `datasets/{dataset_name}/graphs/` stores all the graphs generated of respective dataset.
 - `datasets/{dataset_name}/min_dfscodes/` stores all the minimum dfs code generated of respective dataset.
 - `datasets/{dataset_name}/sequences/` stores all the sequences generated of respective dataset.
  
-###results
-- - `/results/{dataset_name}/{edge_type}/{model_name}/lr_{learning rate}` stores all the results attained for respective dataset. 
+### Results
+- `/results/{dataset_name}/{edge_type}/{model_name}/lr_{learning rate}` stores all the results attained for respective dataset. 
 
 Here, dataset_name denotes name of the dataset, edge_type could be normal (taking existing edge label) or default (taking default value), model_name denotes the model used (could be lstm, gru, bilstm or transformer), learning_rate denotes the learning rate set while training the model.
 
