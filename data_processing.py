@@ -1,13 +1,12 @@
 import random
 import time
 import pickle
-from torch.utils.data import DataLoader
 import os
 import json
 from args import Args
 from utils import create_dirs
 from datasets.process_dataset import create_graphs
-from process_sequence import create_sequences
+from datasets.process_sequence import create_sequences
 from datasets.preprocess import calc_max_prev_node, dfscodes_weights
 
 if __name__ == '__main__':
@@ -66,5 +65,5 @@ if __name__ == '__main__':
                   "dfscode": dfscode_time,
                   "create_sequence": create_sequences_time}
                   
-    with open ('/content/drive/MyDrive/NTU_graph_classification/datasets/'+args.graph_type+'/time.txt', 'w') as f:
+    with open ('datasets/'+args.graph_type+'/time.txt', 'w') as f:
         f.write(json.dumps(param_time, indent=2))
