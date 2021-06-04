@@ -94,7 +94,7 @@ Parameter setting:
 There are several different types of outputs, each saved into a different directory under a path prefix. The path prefix is set at `args.dir_input`. By default this field is set to `''`:
 
 
-- `tmp/` stores all the temporary files generated during dataset processing
+- `tmp/` stores all the temporary files generated during dataset processing.
 - `results/` for contains the results of the model. Different folders are created corresponding to dataset used. 
 
 ### Dataset processing
