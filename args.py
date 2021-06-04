@@ -12,9 +12,9 @@ class Args:
         # Clean temp folder
         self.clean_temp = False
         
-        # Check datasets/process_dataset for datasets
-        # Select dataset to train the model
-        self.graph_type = 'MUTAG'
+        # Process dataset
+        
+        self.graph_type = 'MUTAG'  # Select dataset to train the model
         self.default_edge = None #Set it None to take existing edge label or set it to the default value
         self.num_graphs = None  # Set it None to take complete dataset
         self.num_positive = None # Set it None to take all positive graohs in dataset else the number of positive sample to take

@@ -1,7 +1,6 @@
 import os
 import shutil
 import pickle
-import torch
 
 
 def mkdir(path):
