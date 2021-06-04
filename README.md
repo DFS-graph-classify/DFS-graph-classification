@@ -91,7 +91,7 @@ Parameter setting:
 
 ## Outputs
 
-There are several different types of outputs, each saved into a different directory under a path prefix. The path prefix is set at `args.dir_input`. Suppose that this field is set to `''`:
+There are several different types of outputs, each saved into a different directory under a path prefix. The path prefix is set at `args.dir_input`. By default this field is set to `''`:
 
 
 - `tmp/` stores all the temporary files generated during training and evaluation.
