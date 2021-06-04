@@ -3,7 +3,6 @@ import os
 from multiprocessing import Pool
 from functools import partial
 import networkx as nx
-import torch
 from tqdm.auto import tqdm
 
 from dfscode.dfs_wrapper import get_min_dfscode
