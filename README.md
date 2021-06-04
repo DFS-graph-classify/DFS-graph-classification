@@ -103,7 +103,7 @@ There are several different types of outputs, each saved into a different direct
 - `datasets/{dataset_name}/sequences/` stores all the sequences generated of respective dataset.
  
 ### Results
-- `/results/{dataset_name}/{edge_type}/{model_name}/lr_{learning rate}` stores all the results attained for respective dataset. 
+- `/results/{dataset_name}/{edge_type}/{model_name}/lr_{learning rate}` stores all the results at each epoch attained for respective dataset. 
 
-Here, dataset_name denotes name of the dataset, edge_type could be normal (taking existing edge label) or default (taking default value), model_name denotes the model used (could be lstm, gru, bilstm or transformer), learning_rate denotes the learning rate set while training the model.
+Here, _dataset_name_ denotes name of the dataset; _edge_type_ could be normal (taking existing edge label) or default (taking default value); _model_name_ denotes the model used (could be lstm, gru, bilstm or transformer); _learning_rate_ denotes the learning rate set while training the model.
 
