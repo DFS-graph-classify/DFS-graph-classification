@@ -33,7 +33,7 @@ pip install --upgrade tensorflow
 
 (used version is 2.5.0)
 
-[Boost](https://www.boost.org/) (Version >= 1.70.0) and [OpenMP](https://www.openmp.org/) are required for compling C++ binaries. 
+[Boost](https://www.boost.org/) (Version >= 1.70.0) and [OpenMP](https://www.openmp.org/) are required for compiling C++ binaries. 
 
 For Boost, you can use command
 
