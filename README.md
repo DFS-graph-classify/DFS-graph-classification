@@ -3,7 +3,6 @@
 <i>Jhalak Gupta and Arijit Khan</i></br>
 
 
-# Running the Code
 ## Installation
 
 The code has been tested with Python 3.7.10 in [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb?utm_source=scs-index).
