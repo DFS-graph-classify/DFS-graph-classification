@@ -1,5 +1,3 @@
-# DFS-graph-classification
-
 # Graph Classification with Minimum DFS Code: Improving Graph Neural Network Expressivity
 <b>Proc. of IEEE International Conference on Big Data 2021, [presented in Machine Learning on Big Data (MLBD 2021), special session of IEEE BigData 2021]</b></br>
 <i>Jhalak Gupta and Arijit Khan</i></br>
